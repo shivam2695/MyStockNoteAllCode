@@ -632,16 +632,7 @@ const Index = () => {
               Watch Demo
             </Button>
           </div>
-          <div className="flex items-center justify-center space-x-4 mt-8 text-blue-100">
-            <div className="flex items-center">
-              <CheckCircle className="h-5 w-5 mr-2" />
-              <span>Free 14-day trial</span>
-            </div>
-            <div className="flex items-center">
-              <CheckCircle className="h-5 w-5 mr-2" />
-              <span>No credit card required</span>
-            </div>
-          </div>
+
         </div>
       </section>
 
