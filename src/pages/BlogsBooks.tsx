@@ -1520,7 +1520,7 @@ const BlogsBooks = () => {
 
           <div className="border-t border-slate-700 mt-12 pt-8 text-center text-sm">
             <p className="text-slate-400">
-              &copy; 2025 StockNote. All rights reserved.
+              &copy; 2025 MyStockNote. All rights reserved.
               <span className="mx-2">•</span>
               Built for investors, by investors.
             </p>
