@@ -154,9 +154,9 @@ const Index = () => {
               >
                 Try StockNote free →
               </Button>
-            </motion.div>
+            </div>
 
-            <motion.div {...fadeInRight} className="relative">
+            <div className="relative">
               <div className="relative z-10">
                 {/* Main Dashboard Card */}
                 <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-2xl p-8 transform rotate-2 hover:rotate-0 transition-transform duration-300 border border-blue-100">
