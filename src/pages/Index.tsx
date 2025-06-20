@@ -454,7 +454,10 @@ const Index = () => {
           </div>
 
           {/* Trust Points */}
-
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl p-8 shadow-lg border border-blue-100 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">
                 Built by traders, for traders
@@ -612,8 +615,8 @@ const Index = () => {
             Ready to elevate your investment game?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of traders and investors who use MyStockNote to track,
-            analyze, and optimize their portfolios.
+            Join thousands of traders and investors who use MyStockNote to
+            track, analyze, and optimize their portfolios.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
@@ -632,7 +635,6 @@ const Index = () => {
               Watch Demo
             </Button>
           </div>
-
         </div>
       </section>
 
@@ -667,22 +669,34 @@ const Index = () => {
               <h3 className="font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-slate-400">
                 <li>
-                  <button onClick={() => navigate("/journal")} className="hover:text-white">
+                  <button
+                    onClick={() => navigate("/journal")}
+                    className="hover:text-white"
+                  >
                     Journal
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate("/pricing")} className="hover:text-white">
+                  <button
+                    onClick={() => navigate("/pricing")}
+                    className="hover:text-white"
+                  >
                     Pricing
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate("/learn")} className="hover:text-white">
+                  <button
+                    onClick={() => navigate("/learn")}
+                    className="hover:text-white"
+                  >
                     Learn
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate("/profile")} className="hover:text-white">
+                  <button
+                    onClick={() => navigate("/profile")}
+                    className="hover:text-white"
+                  >
                     Profile
                   </button>
                 </li>
