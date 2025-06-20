@@ -346,7 +346,7 @@ const Index = () => {
               <span>No credit card required</span>
             </div>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* Footer */}
@@ -369,22 +369,34 @@ const Index = () => {
               <h3 className="font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-slate-400">
                 <li>
-                  <button onClick={() => navigate("/journal")} className="hover:text-white">
+                  <button
+                    onClick={() => navigate("/journal")}
+                    className="hover:text-white"
+                  >
                     Journal
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate("/pricing")} className="hover:text-white">
+                  <button
+                    onClick={() => navigate("/pricing")}
+                    className="hover:text-white"
+                  >
                     Pricing
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate("/learn")} className="hover:text-white">
+                  <button
+                    onClick={() => navigate("/learn")}
+                    className="hover:text-white"
+                  >
                     Learn
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate("/profile")} className="hover:text-white">
+                  <button
+                    onClick={() => navigate("/profile")}
+                    className="hover:text-white"
+                  >
                     Profile
                   </button>
                 </li>
