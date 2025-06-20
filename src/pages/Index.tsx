@@ -138,7 +138,7 @@ const Index = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[600px] py-20">
-            <motion.div {...fadeInLeft} className="text-white">
+            <div className="text-white">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Your Personal Trading Journal.{" "}
                 <span className="text-blue-200">Reinvented.</span>
@@ -378,34 +378,22 @@ const Index = () => {
               <h3 className="font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-slate-400">
                 <li>
-                  <button
-                    onClick={() => navigate("/journal")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/journal")} className="hover:text-white">
                     Journal
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => navigate("/pricing")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/pricing")} className="hover:text-white">
                     Pricing
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => navigate("/learn")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/learn")} className="hover:text-white">
                     Learn
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => navigate("/profile")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/profile")} className="hover:text-white">
                     Profile
                   </button>
                 </li>
