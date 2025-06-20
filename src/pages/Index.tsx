@@ -45,7 +45,7 @@ const Index = () => {
                   <TrendingUp className="h-5 w-5 text-white" />
                 </div>
                 <span className="ml-2 text-xl font-bold text-slate-900">
-                  StockNote
+                  MyStockNote
                 </span>
               </div>
             </div>
@@ -81,7 +81,7 @@ const Index = () => {
                 onClick={() => navigate("/auth")}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6"
               >
-                Try StockNote free →
+                Get Started →
               </Button>
             </div>
           </div>
@@ -445,19 +445,16 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-              Why Traders Love StockNote
+              Why Traders Love MyStockNote
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Join thousands of traders who trust StockNote for their trading
+              Join thousands of traders who trust MyStockNote for their trading
               journey
             </p>
           </div>
 
           {/* Trust Points */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-gradient-to-br from-white to-green-50 rounded-xl p-8 shadow-lg border border-green-100 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="h-8 w-8 text-white" />
+
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">
                 Built by traders, for traders
@@ -615,7 +612,7 @@ const Index = () => {
             Ready to elevate your investment game?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of traders and investors who use StockNote to track,
+            Join thousands of traders and investors who use MyStockNote to track,
             analyze, and optimize their portfolios.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -657,7 +654,7 @@ const Index = () => {
                 <div className="h-8 w-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
                   <TrendingUp className="h-5 w-5 text-white" />
                 </div>
-                <span className="ml-2 text-xl font-bold">StockNote</span>
+                <span className="ml-2 text-xl font-bold">MyStockNote</span>
               </div>
               <p className="text-slate-400 max-w-md mb-6">
                 The complete investment management platform for tracking,
@@ -679,34 +676,22 @@ const Index = () => {
               <h3 className="font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-slate-400">
                 <li>
-                  <button
-                    onClick={() => navigate("/journal")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/journal")} className="hover:text-white">
                     Journal
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => navigate("/pricing")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/pricing")} className="hover:text-white">
                     Pricing
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => navigate("/learn")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/learn")} className="hover:text-white">
                     Learn
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => navigate("/profile")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/profile")} className="hover:text-white">
                     Profile
                   </button>
                 </li>
@@ -739,7 +724,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 StockNote. All rights reserved.</p>
+            <p>&copy; 2025 MyStockNote. All rights reserved.</p>
           </div>
         </div>
       </footer>
