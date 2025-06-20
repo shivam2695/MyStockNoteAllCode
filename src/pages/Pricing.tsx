@@ -146,7 +146,7 @@ const Pricing = () => {
               <TrendingUp className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-              StockNote
+              MyStockNote
             </span>
           </div>
           <div className="hidden md:flex items-center gap-6">
@@ -183,7 +183,7 @@ const Pricing = () => {
             </span>
           </h1>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            StockNote replaces{" "}
+            MyStockNote replaces{" "}
             <span className="font-semibold text-gray-800">lots</span> of apps.
             See how our all-in-one solution
             <br />
@@ -243,7 +243,7 @@ const Pricing = () => {
               <Card className="p-6 bg-gradient-to-br from-yellow-100 to-amber-50 border-0 shadow-lg rounded-3xl">
                 <div className="text-center">
                   <div className="text-sm text-gray-700 mb-1">
-                    WITH STOCKNOTE
+                    WITH MYSTOCKNOTE
                   </div>
                   <div className="text-4xl font-bold text-gray-900">
                     ₹{isAnnual ? "208" : "299"}
@@ -379,7 +379,7 @@ const Pricing = () => {
             Join thousands of traders leveling up
           </h2>
           <p className="text-gray-600 text-lg mb-8">
-            StockNote is where even the pros reflect.
+            MyStockNote is where even the pros reflect.
           </p>
           <Button
             size="lg"
@@ -397,7 +397,7 @@ const Pricing = () => {
               <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
                 <TrendingUp className="w-5 h-5 text-white" />
               </div>
-              <span className="font-semibold text-gray-900">StockNote</span>
+              <span className="font-semibold text-gray-900">MyStockNote</span>
             </div>
 
             <div className="flex items-center gap-6 text-sm text-gray-600">
@@ -422,7 +422,7 @@ const Pricing = () => {
             </div>
 
             <div className="text-sm text-gray-500">
-              © 2025 StockNote. All rights reserved.
+              © 2025 MyStockNote. All rights reserved.
             </div>
           </div>
         </footer>

@@ -24,7 +24,7 @@ const Dashboard = () => {
                 <TrendingUp className="h-5 w-5 text-white" />
               </div>
               <span className="ml-2 text-xl font-bold text-slate-900">
-                StockNote
+                MyStockNote
               </span>
             </div>
             <div className="flex items-center space-x-4">
@@ -43,6 +43,7 @@ const Dashboard = () => {
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
+          Welcome to MyStockNote
           <h1 className="text-3xl font-bold text-slate-900">
             Welcome to StockNote
           </h1>

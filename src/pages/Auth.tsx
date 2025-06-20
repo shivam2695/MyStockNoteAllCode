@@ -96,13 +96,13 @@ const Auth = () => {
             <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
               <TrendingUp className="w-6 h-6" />
             </div>
-            <span className="text-2xl font-bold">StockNote</span>
+            <span className="text-2xl font-bold">MyStockNote</span>
           </div>
 
           {/* Main Content */}
           <div className="max-w-md">
             <h1 className="text-4xl font-bold mb-6 leading-tight">
-              Your edge isn't luck. It's data. It's StockNote.
+              Your edge isn't luck. It's data. It's MyStockNote.
             </h1>
 
             <p className="text-lg text-white/80 mb-8 leading-relaxed">
@@ -150,7 +150,9 @@ const Auth = () => {
               <div className="w-8 h-8 stocknote-gradient rounded-lg flex items-center justify-center">
                 <TrendingUp className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">StockNote</span>
+              <span className="text-xl font-bold text-gray-900">
+                MyStockNote
+              </span>
             </div>
 
             {/* Toggle Buttons */}

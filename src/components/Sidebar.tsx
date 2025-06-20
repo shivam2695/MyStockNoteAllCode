@@ -36,7 +36,7 @@ export const Sidebar = () => {
       <div className="mb-8">
         <h2 className="text-lg font-bold text-sidebar-foreground flex items-center gap-2">
           <DollarSign className="h-5 w-5 text-blue-600" />
-          StockNote
+          MyStockNote
         </h2>
         <p className="text-xs text-sidebar-foreground/60 mt-1">
           Your Personal Trading Journal
