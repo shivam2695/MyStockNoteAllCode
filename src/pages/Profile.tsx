@@ -164,7 +164,7 @@ const Profile = () => {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-sky-600 via-blue-600 to-indigo-700 bg-clip-text text-transparent">
-                  StockNote
+                  MyStockNote
                 </h1>
                 <p className="text-sm text-gray-500 mt-1">
                   Welcome, {profileData.displayName}
@@ -479,7 +479,7 @@ const Profile = () => {
                         <SelectItem value="in">🇮🇳 India</SelectItem>
                         <SelectItem value="us">🇺🇸 United States</SelectItem>
                         <SelectItem value="uk">🇬🇧 United Kingdom</SelectItem>
-                        <SelectItem value="ca">🇨🇦 Canada</SelectItem>
+                        <SelectItem value="ca">🇨���� Canada</SelectItem>
                         <SelectItem value="de">🇩🇪 Germany</SelectItem>
                         <SelectItem value="fr">🇫🇷 France</SelectItem>
                         <SelectItem value="other">🌍 Other</SelectItem>
