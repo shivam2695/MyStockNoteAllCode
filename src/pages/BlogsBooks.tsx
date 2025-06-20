@@ -67,11 +67,11 @@ const BlogsBooks = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Understanding Stock Market Volatility in 2024",
+      title: "Understanding Stock Market Volatility in 2025",
       excerpt:
         "Dive deep into the factors driving market volatility and how to navigate uncertain times with strategic investment approaches. Learn about macro-economic indicators, geopolitical impacts, and technical analysis techniques.",
       author: "Sarah Chen",
-      date: "Dec 15, 2024",
+      date: "Dec 15, 2025",
       readTime: "8 min read",
       category: "Market Analysis",
       featured: true,
@@ -88,7 +88,7 @@ const BlogsBooks = () => {
       excerpt:
         "Our comprehensive analysis of the most promising technology stocks with strong fundamentals, innovative products, and exceptional growth potential for Q1 2025.",
       author: "Mike Rodriguez",
-      date: "Dec 12, 2024",
+      date: "Dec 12, 2025",
       readTime: "6 min read",
       category: "Stock Picks",
       featured: false,
@@ -105,7 +105,7 @@ const BlogsBooks = () => {
       excerpt:
         "A comprehensive step-by-step guide for beginners on how to create a well-diversified portfolio that matches your risk tolerance, financial goals, and investment timeline.",
       author: "Emma Thompson",
-      date: "Dec 10, 2024",
+      date: "Dec 10, 2025",
       readTime: "12 min read",
       category: "Education",
       featured: false,
@@ -122,7 +122,7 @@ const BlogsBooks = () => {
       excerpt:
         "Master sophisticated options strategies including covered calls, cash-secured puts, iron condors, and butterfly spreads to generate consistent income from your portfolio.",
       author: "David Kim",
-      date: "Dec 8, 2024",
+      date: "Dec 8, 2025",
       readTime: "15 min read",
       category: "Education",
       featured: false,
@@ -135,11 +135,11 @@ const BlogsBooks = () => {
     },
     {
       id: 5,
-      title: "Q4 2024 Earnings Season: Key Reports to Watch",
+      title: "Q4 2025 Earnings Season: Key Reports to Watch",
       excerpt:
         "Comprehensive analysis of the most important earnings reports this quarter and their potential impact on market movements, sector rotations, and individual stock performance.",
       author: "Lisa Parker",
-      date: "Dec 5, 2024",
+      date: "Dec 5, 2025",
       readTime: "7 min read",
       category: "Earnings",
       featured: false,
@@ -156,7 +156,7 @@ const BlogsBooks = () => {
       excerpt:
         "How environmental, social, and governance factors are reshaping investment strategies and creating new opportunities for sustainable long-term returns.",
       author: "James Wilson",
-      date: "Dec 3, 2024",
+      date: "Dec 3, 2025",
       readTime: "9 min read",
       category: "ESG",
       featured: false,
@@ -169,11 +169,11 @@ const BlogsBooks = () => {
     },
     {
       id: 7,
-      title: "Cryptocurrency vs Traditional Stocks: 2024 Performance Review",
+      title: "Cryptocurrency vs Traditional Stocks: 2025 Performance Review",
       excerpt:
-        "A detailed comparison of cryptocurrency and traditional stock market performance, risk profiles, and future outlook based on 2024 data and trends.",
+        "A detailed comparison of cryptocurrency and traditional stock market performance, risk profiles, and future outlook based on 2025 data and trends.",
       author: "Alex Chen",
-      date: "Dec 1, 2024",
+      date: "Dec 1, 2025",
       readTime: "11 min read",
       category: "Crypto",
       featured: false,
@@ -186,11 +186,11 @@ const BlogsBooks = () => {
     },
     {
       id: 8,
-      title: "Warren Buffett's 2024 Portfolio Changes: What We Can Learn",
+      title: "Warren Buffett's 2025 Portfolio Changes: What We Can Learn",
       excerpt:
         "Analyzing Berkshire Hathaway's recent portfolio adjustments and the investment principles behind Warren Buffett's latest strategic moves.",
       author: "Robert Johnson",
-      date: "Nov 28, 2024",
+      date: "Nov 28, 2025",
       readTime: "10 min read",
       category: "Market Analysis",
       featured: false,
@@ -350,31 +350,25 @@ const BlogsBooks = () => {
       price: "Free",
       rating: 4.8,
       subscribers: 45600,
-      host: "StockNote Team",
+                    MyStockNote
+      host: "MyStockNote Team",
       level: "All Levels",
       comingSoon: false,
     },
   ];
 
-  const filteredPosts =
-    selectedCategory === "all"
-      ? blogPosts
-      : blogPosts.filter(
-          (post) =>
-            post.category.toLowerCase().replace(/\s+/g, "-") ===
-            selectedCategory,
-        );
+  const filteredPosts = selectedCategory === "all"
+    ? blogPosts
+    : blogPosts.filter(post =>
+        post.category.toLowerCase().replace(/\s+/g, "-") === selectedCategory
+      );
 
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
-      case "Beginner":
-        return "bg-green-100 text-green-800";
-      case "Intermediate":
-        return "bg-yellow-100 text-yellow-800";
-      case "Advanced":
-        return "bg-red-100 text-red-800";
-      default:
-        return "bg-gray-100 text-gray-800";
+      case "Beginner": return "bg-green-100 text-green-800";
+      case "Intermediate": return "bg-yellow-100 text-yellow-800";
+      case "Advanced": return "bg-red-100 text-red-800";
+      default: return "bg-gray-100 text-gray-800";
     }
   };
 
@@ -390,7 +384,7 @@ const BlogsBooks = () => {
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent">
-                  StockNote
+                  MyStockNote
                 </h1>
                 <p className="text-xs text-gray-500">Learn • Analyze • Grow</p>
               </div>
@@ -414,11 +408,7 @@ const BlogsBooks = () => {
               >
                 Pricing
               </button>
-              <Button
-                size="sm"
-                onClick={() => navigate("/auth")}
-                className="shadow-md"
-              >
+              <Button size="sm" onClick={() => navigate("/auth")} className="shadow-md">
                 Get Started
               </Button>
             </nav>
@@ -438,10 +428,7 @@ const BlogsBooks = () => {
               </span>
             </div>
           </div>
-          <div
-            className="absolute top-32 right-16 opacity-15 animate-float"
-            style={{ animationDelay: "1s" }}
-          >
+          <div className="absolute top-32 right-16 opacity-15 animate-float" style={{ animationDelay: "1s" }}>
             <div className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg p-4 backdrop-blur-sm border border-blue-200/30">
               <span className="text-blue-700 font-bold text-sm flex items-center">
                 <PieChart className="h-4 w-4 mr-1" />
@@ -449,10 +436,7 @@ const BlogsBooks = () => {
               </span>
             </div>
           </div>
-          <div
-            className="absolute bottom-40 left-20 opacity-15 animate-float"
-            style={{ animationDelay: "2s" }}
-          >
+          <div className="absolute bottom-40 left-20 opacity-15 animate-float" style={{ animationDelay: "2s" }}>
             <div className="bg-gradient-to-r from-purple-500/20 to-violet-500/20 rounded-lg p-4 backdrop-blur-sm border border-purple-200/30">
               <span className="text-purple-700 font-bold text-sm flex items-center">
                 <BarChart3 className="h-4 w-4 mr-1" />
@@ -460,10 +444,7 @@ const BlogsBooks = () => {
               </span>
             </div>
           </div>
-          <div
-            className="absolute bottom-60 right-10 opacity-15 animate-float"
-            style={{ animationDelay: "0.5s" }}
-          >
+          <div className="absolute bottom-60 right-10 opacity-15 animate-float" style={{ animationDelay: "0.5s" }}>
             <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 rounded-lg p-4 backdrop-blur-sm border border-orange-200/30">
               <span className="text-orange-700 font-bold text-sm flex items-center">
                 <Activity className="h-4 w-4 mr-1" />
@@ -489,18 +470,12 @@ const BlogsBooks = () => {
 
         <div className="container mx-auto text-center relative z-10">
           <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Not Just Another{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              Trading Blog
-            </span>
+            Not Just Another <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">Trading Blog</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
             We go beyond charts and candle patterns — diving into the
             psychology, discipline, and habits that turn everyday traders into
-            consistent winners.{" "}
-            <span className="font-semibold text-blue-600">
-              Weekly insights. Honest analysis. Zero fluff.
-            </span>
+            consistent winners. <span className="font-semibold text-blue-600">Weekly insights. Honest analysis. Zero fluff.</span>
           </p>
 
           {/* Enhanced Investment Metrics Bar */}
@@ -508,52 +483,32 @@ const BlogsBooks = () => {
             <div className="flex flex-wrap items-center justify-center gap-8">
               <div className="flex items-center space-x-2">
                 <Activity className="h-5 w-5 text-green-500" />
-                <span className="text-sm font-semibold text-gray-700">
-                  Portfolio
-                </span>
-                <span className="text-sm text-green-600 font-medium">
-                  Growth
-                </span>
+                <span className="text-sm font-semibold text-gray-700">Portfolio</span>
+                <span className="text-sm text-green-600 font-medium">Growth</span>
               </div>
               <div className="w-px h-6 bg-gray-300 hidden sm:block"></div>
               <div className="flex items-center space-x-2">
                 <TrendingUp className="h-5 w-5 text-blue-500" />
-                <span className="text-sm font-semibold text-gray-700">
-                  Market
-                </span>
-                <span className="text-sm text-blue-600 font-medium">
-                  Analysis
-                </span>
+                <span className="text-sm font-semibold text-gray-700">Market</span>
+                <span className="text-sm text-blue-600 font-medium">Analysis</span>
               </div>
               <div className="w-px h-6 bg-gray-300 hidden sm:block"></div>
               <div className="flex items-center space-x-2">
                 <BarChart3 className="h-5 w-5 text-purple-500" />
-                <span className="text-sm font-semibold text-gray-700">
-                  Risk
-                </span>
-                <span className="text-sm text-purple-600 font-medium">
-                  Assessment
-                </span>
+                <span className="text-sm font-semibold text-gray-700">Risk</span>
+                <span className="text-sm text-purple-600 font-medium">Assessment</span>
               </div>
               <div className="w-px h-6 bg-gray-300 hidden sm:block"></div>
               <div className="flex items-center space-x-2">
                 <PieChart className="h-5 w-5 text-orange-500" />
-                <span className="text-sm font-semibold text-gray-700">
-                  Research
-                </span>
-                <span className="text-sm text-orange-600 font-medium">
-                  Reports
-                </span>
+                <span className="text-sm font-semibold text-gray-700">Research</span>
+                <span className="text-sm text-orange-600 font-medium">Reports</span>
               </div>
               <div className="w-px h-6 bg-gray-300 hidden sm:block"></div>
               <div className="flex items-center space-x-2">
                 <Lightbulb className="h-5 w-5 text-yellow-500" />
-                <span className="text-sm font-semibold text-gray-700">
-                  Educational
-                </span>
-                <span className="text-sm text-yellow-600 font-medium">
-                  Content
-                </span>
+                <span className="text-sm font-semibold text-gray-700">Educational</span>
+                <span className="text-sm text-yellow-600 font-medium">Content</span>
               </div>
             </div>
           </div>
@@ -591,24 +546,15 @@ const BlogsBooks = () => {
               className="w-full max-w-lg"
             >
               <TabsList className="grid grid-cols-3 w-full h-14 bg-white/80 backdrop-blur-sm border border-gray-200 shadow-lg">
-                <TabsTrigger
-                  value="blogs"
-                  className="text-base font-semibold flex items-center gap-2"
-                >
+                <TabsTrigger value="blogs" className="text-base font-semibold flex items-center gap-2">
                   <BookOpen className="h-4 w-4" />
                   Blogs
                 </TabsTrigger>
-                <TabsTrigger
-                  value="books"
-                  className="text-base font-semibold flex items-center gap-2"
-                >
+                <TabsTrigger value="books" className="text-base font-semibold flex items-center gap-2">
                   <Star className="h-4 w-4" />
                   Books
                 </TabsTrigger>
-                <TabsTrigger
-                  value="courses"
-                  className="text-base font-semibold flex items-center gap-2"
-                >
+                <TabsTrigger value="courses" className="text-base font-semibold flex items-center gap-2">
                   <PlayCircle className="h-4 w-4" />
                   Courses
                 </TabsTrigger>
@@ -652,12 +598,10 @@ const BlogsBooks = () => {
               {/* Blog Header with Search and Filters */}
               <div className="text-center mb-12">
                 <h3 className="text-4xl font-bold text-gray-900 mb-4">
-                  Investment Insights,{" "}
-                  <span className="text-blue-600">Every Week</span>
+                  Investment Insights, <span className="text-blue-600">Every Week</span>
                 </h3>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-                  Clear, actionable insights to help you navigate the markets
-                  with confidence and grow your wealth consistently.
+                  Clear, actionable insights to help you navigate the markets with confidence and grow your wealth consistently.
                 </p>
 
                 {/* Search and Filter Bar */}
@@ -677,7 +621,7 @@ const BlogsBooks = () => {
                       onChange={(e) => setSelectedCategory(e.target.value)}
                       className="border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white shadow-sm"
                     >
-                      {blogCategories.map((category) => (
+                      {blogCategories.map(category => (
                         <option key={category.id} value={category.id}>
                           {category.name} ({category.count})
                         </option>
@@ -697,16 +641,12 @@ const BlogsBooks = () => {
                         {/* Enhanced Investment Overlays */}
                         <div className="absolute top-6 left-6 opacity-30">
                           <div className="bg-white/20 rounded-lg p-2 backdrop-blur-sm">
-                            <span className="text-xs font-medium text-white">
-                              P/E Ratio: 18.4x
-                            </span>
+                            <span className="text-xs font-medium text-white">P/E Ratio: 18.4x</span>
                           </div>
                         </div>
                         <div className="absolute bottom-6 right-6 opacity-30">
                           <div className="bg-white/20 rounded-lg p-2 backdrop-blur-sm">
-                            <span className="text-xs font-medium text-white">
-                              ROI: +15.2%
-                            </span>
+                            <span className="text-xs font-medium text-white">ROI: +15.2%</span>
                           </div>
                         </div>
                         <div className="absolute top-1/2 left-6 opacity-20">
@@ -723,17 +663,10 @@ const BlogsBooks = () => {
                           <Crown className="h-3 w-3 mr-1" />
                           FEATURED
                         </Badge>
-                        <Badge
-                          variant="outline"
-                          className="text-blue-600 border-blue-200"
-                        >
+                        <Badge variant="outline" className="text-blue-600 border-blue-200">
                           {blogPosts[0].category}
                         </Badge>
-                        <Badge
-                          className={getDifficultyColor(
-                            blogPosts[0].difficulty,
-                          )}
-                        >
+                        <Badge className={getDifficultyColor(blogPosts[0].difficulty)}>
                           {blogPosts[0].difficulty}
                         </Badge>
                       </div>
@@ -747,11 +680,7 @@ const BlogsBooks = () => {
                       {/* Tags */}
                       <div className="flex flex-wrap gap-2 mb-6">
                         {blogPosts[0].tags.map((tag, index) => (
-                          <Badge
-                            key={index}
-                            variant="secondary"
-                            className="text-xs"
-                          >
+                          <Badge key={index} variant="secondary" className="text-xs">
                             {tag}
                           </Badge>
                         ))}
@@ -808,22 +737,8 @@ const BlogsBooks = () => {
               {/* Blog Grid */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredPosts.slice(1).map((post, index) => {
-                  const stockIcons = [
-                    Activity,
-                    BarChart3,
-                    TrendingUp,
-                    PieChart,
-                    Target,
-                    Zap,
-                  ];
-                  const financialTerms = [
-                    "Beta",
-                    "Alpha",
-                    "Sharpe",
-                    "P/E",
-                    "ROE",
-                    "EBITDA",
-                  ];
+                  mindset. MyStockNote is your comprehensive platform to{" "}
+                  const financialTerms = ["Beta", "Alpha", "Sharpe", "P/E", "ROE", "EBITDA"];
                   const metrics = ["1.2", "0.8", "1.5", "18x", "15%", "23%"];
                   const IconComponent = stockIcons[index % stockIcons.length];
 
@@ -842,8 +757,7 @@ const BlogsBooks = () => {
                         <div className="absolute bottom-3 left-3 opacity-30">
                           <div className="bg-white/70 rounded px-2 py-1">
                             <span className="text-xs font-medium text-slate-700">
-                              {financialTerms[index % financialTerms.length]}:{" "}
-                              {metrics[index % metrics.length]}
+                              {financialTerms[index % financialTerms.length]}: {metrics[index % metrics.length]}
                             </span>
                           </div>
                         </div>
@@ -863,15 +777,10 @@ const BlogsBooks = () => {
                       <CardHeader className="pb-3">
                         <div className="flex items-center justify-between mb-3">
                           <div className="flex items-center space-x-2">
-                            <Badge
-                              variant="outline"
-                              className="text-xs font-semibold text-blue-600 border-blue-200"
-                            >
+                            <Badge variant="outline" className="text-xs font-semibold text-blue-600 border-blue-200">
                               {post.category}
                             </Badge>
-                            <Badge
-                              className={`text-xs ${getDifficultyColor(post.difficulty)}`}
-                            >
+                            <Badge className={`text-xs ${getDifficultyColor(post.difficulty)}`}>
                               {post.difficulty}
                             </Badge>
                           </div>
@@ -893,11 +802,7 @@ const BlogsBooks = () => {
                         {/* Tags */}
                         <div className="flex flex-wrap gap-1 mb-4">
                           {post.tags.slice(0, 2).map((tag, tagIndex) => (
-                            <Badge
-                              key={tagIndex}
-                              variant="secondary"
-                              className="text-xs"
-                            >
+                            <Badge key={tagIndex} variant="secondary" className="text-xs">
                               {tag}
                             </Badge>
                           ))}
@@ -950,33 +855,25 @@ const BlogsBooks = () => {
                 <div className="flex justify-center items-center space-x-8 bg-gradient-to-r from-emerald-50 via-blue-50 to-purple-50 border-2 border-emerald-200 py-4 px-8 rounded-2xl max-w-fit mx-auto">
                   <div className="flex items-center space-x-2">
                     <TrendingUp className="h-5 w-5 text-emerald-600" />
-                    <span className="text-sm font-semibold text-gray-700">
-                      Fundamental
-                    </span>
+                    <span className="text-sm font-semibold text-gray-700">Fundamental</span>
                     <span className="text-sm text-emerald-600">Analysis</span>
                   </div>
                   <div className="w-px h-6 bg-gray-300"></div>
                   <div className="flex items-center space-x-2">
                     <BarChart3 className="h-5 w-5 text-blue-600" />
-                    <span className="text-sm font-semibold text-gray-700">
-                      Technical
-                    </span>
+                    <span className="text-sm font-semibold text-gray-700">Technical</span>
                     <span className="text-sm text-blue-600">Analysis</span>
                   </div>
                   <div className="w-px h-6 bg-gray-300"></div>
                   <div className="flex items-center space-x-2">
                     <PieChart className="h-5 w-5 text-purple-600" />
-                    <span className="text-sm font-semibold text-gray-700">
-                      Portfolio
-                    </span>
+                    <span className="text-sm font-semibold text-gray-700">Portfolio</span>
                     <span className="text-sm text-purple-600">Management</span>
                   </div>
                   <div className="w-px h-6 bg-gray-300"></div>
                   <div className="flex items-center space-x-2">
                     <Award className="h-5 w-5 text-orange-600" />
-                    <span className="text-sm font-semibold text-gray-700">
-                      Expert
-                    </span>
+                    <span className="text-sm font-semibold text-gray-700">Expert</span>
                     <span className="text-sm text-orange-600">Strategies</span>
                   </div>
                 </div>
@@ -984,13 +881,10 @@ const BlogsBooks = () => {
 
               <div className="text-center mb-12">
                 <h3 className="text-4xl font-bold text-gray-900 mb-4">
-                  Essential{" "}
-                  <span className="text-blue-600">Investment Books</span>
+                  Essential <span className="text-blue-600">Investment Books</span>
                 </h3>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Curated collection of must-read books to build your investment
-                  knowledge, master proven strategies, and develop the mindset
-                  of successful investors.
+                  Curated collection of must-read books to build your investment knowledge, master proven strategies, and develop the mindset of successful investors.
                 </p>
               </div>
 
@@ -1015,9 +909,7 @@ const BlogsBooks = () => {
                         </div>
                         <div className="absolute top-1/2 right-6 opacity-20">
                           <div className="bg-white/20 rounded px-2 py-1">
-                            <span className="text-xs font-medium text-white">
-                              Value Investing
-                            </span>
+                            <span className="text-xs font-medium text-white">Value Investing</span>
                           </div>
                         </div>
                         <div className="absolute bottom-1/3 left-6 opacity-15">
@@ -1031,15 +923,10 @@ const BlogsBooks = () => {
                           <Award className="h-3 w-3 mr-1" />
                           BESTSELLER
                         </Badge>
-                        <Badge
-                          variant="outline"
-                          className="text-amber-600 border-amber-200"
-                        >
+                        <Badge variant="outline" className="text-amber-600 border-amber-200">
                           {books[0].category}
                         </Badge>
-                        <Badge
-                          className={getDifficultyColor(books[0].difficulty)}
-                        >
+                        <Badge className={getDifficultyColor(books[0].difficulty)}>
                           {books[0].difficulty}
                         </Badge>
                       </div>
@@ -1082,21 +969,13 @@ const BlogsBooks = () => {
                                 className={`h-5 w-5 ${i < Math.floor(books[0].rating) ? "text-yellow-400 fill-current" : "text-gray-300"}`}
                               />
                             ))}
-                            <span className="ml-2 text-lg font-semibold">
-                              {books[0].rating}
-                            </span>
-                            <span className="ml-1 text-sm text-gray-500">
-                              ({books[0].reviews})
-                            </span>
+                            <span className="ml-2 text-lg font-semibold">{books[0].rating}</span>
+                            <span className="ml-1 text-sm text-gray-500">({books[0].reviews})</span>
                           </div>
                           <div className="text-center">
                             <div className="flex items-center space-x-2">
-                              <span className="text-2xl font-bold text-green-600">
-                                {books[0].price}
-                              </span>
-                              <span className="text-lg text-gray-400 line-through">
-                                {books[0].originalPrice}
-                              </span>
+                              <span className="text-2xl font-bold text-green-600">{books[0].price}</span>
+                              <span className="text-lg text-gray-400 line-through">{books[0].originalPrice}</span>
                             </div>
                           </div>
                         </div>
@@ -1117,22 +996,9 @@ const BlogsBooks = () => {
               {/* Books Grid */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {books.slice(1).map((book, index) => {
-                  const financialIcons = [
-                    TrendingUp,
-                    BarChart3,
-                    PieChart,
-                    Activity,
-                    Target,
-                  ];
-                  const concepts = [
-                    "Growth",
-                    "Value",
-                    "Income",
-                    "Strategy",
-                    "Analysis",
-                  ];
-                  const IconComponent =
-                    financialIcons[index % financialIcons.length];
+                  const financialIcons = [TrendingUp, BarChart3, PieChart, Activity, Target];
+                  const concepts = ["Growth", "Value", "Income", "Strategy", "Analysis"];
+                  const IconComponent = financialIcons[index % financialIcons.length];
 
                   return (
                     <Card
@@ -1169,15 +1035,10 @@ const BlogsBooks = () => {
                       <CardHeader className="pb-3">
                         <div className="flex items-center justify-between mb-3">
                           <div className="flex items-center space-x-2">
-                            <Badge
-                              variant="outline"
-                              className="text-xs font-semibold text-amber-600 border-amber-200"
-                            >
+                            <Badge variant="outline" className="text-xs font-semibold text-amber-600 border-amber-200">
                               {book.category}
                             </Badge>
-                            <Badge
-                              className={`text-xs ${getDifficultyColor(book.difficulty)}`}
-                            >
+                            <Badge className={`text-xs ${getDifficultyColor(book.difficulty)}`}>
                               {book.difficulty}
                             </Badge>
                           </div>
@@ -1222,12 +1083,8 @@ const BlogsBooks = () => {
                         <div className="flex items-center justify-between">
                           <div className="text-center">
                             <div className="flex items-center space-x-2">
-                              <span className="text-lg font-bold text-green-600">
-                                {book.price}
-                              </span>
-                              <span className="text-sm text-gray-400 line-through">
-                                {book.originalPrice}
-                              </span>
+                              <span className="text-lg font-bold text-green-600">{book.price}</span>
+                              <span className="text-sm text-gray-400 line-through">{book.originalPrice}</span>
                             </div>
                           </div>
                           <div className="flex space-x-1">
@@ -1253,8 +1110,7 @@ const BlogsBooks = () => {
                   Learning <span className="text-blue-600">Resources</span>
                 </h3>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive courses, podcasts, and educational content to
-                  accelerate your investment journey.
+                  Comprehensive courses, podcasts, and educational content to accelerate your investment journey.
                 </p>
               </div>
 
@@ -1266,14 +1122,9 @@ const BlogsBooks = () => {
                     <h4 className="text-2xl font-bold">Coming Soon!</h4>
                   </div>
                   <p className="text-lg mb-6">
-                    Our comprehensive investment courses are launching soon. Get
-                    ready to master the markets with expert-led content.
+                    Our comprehensive investment courses are launching soon. Get ready to master the markets with expert-led content.
                   </p>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="bg-white text-purple-600 hover:bg-gray-100"
-                  >
+                  <Button size="lg" variant="outline" className="bg-white text-purple-600 hover:bg-gray-100">
                     <Lock className="h-4 w-4 mr-2" />
                     Notify Me When Available
                   </Button>
@@ -1304,37 +1155,26 @@ const BlogsBooks = () => {
                       )}
 
                       <div className="absolute top-4 right-4">
-                        <Badge
-                          variant="outline"
-                          className="bg-white/20 text-white border-white/30"
-                        >
+                        <Badge variant="outline" className="bg-white/20 text-white border-white/30">
                           {resource.type}
                         </Badge>
                       </div>
                     </div>
 
                     <CardHeader>
-                      <CardTitle className="text-lg">
-                        {resource.title}
-                      </CardTitle>
-                      <p className="text-sm text-gray-600">
-                        by {resource.instructor || resource.host}
-                      </p>
+                      <CardTitle className="text-lg">{resource.title}</CardTitle>
+                      <p className="text-sm text-gray-600">by {resource.instructor || resource.host}</p>
                     </CardHeader>
 
                     <CardContent>
                       <div className="space-y-3 mb-4">
                         <div className="flex justify-between items-center text-sm">
                           <span className="text-gray-600">Duration:</span>
-                          <span className="font-medium">
-                            {resource.duration}
-                          </span>
+                          <span className="font-medium">{resource.duration}</span>
                         </div>
                         <div className="flex justify-between items-center text-sm">
                           <span className="text-gray-600">
-                            {resource.type === "Course"
-                              ? "Lessons:"
-                              : "Episodes:"}
+                            {resource.type === "Course" ? "Lessons:" : "Episodes:"}
                           </span>
                           <span className="font-medium">
                             {resource.lessons || resource.episodes}
@@ -1347,13 +1187,9 @@ const BlogsBooks = () => {
                         <div className="flex justify-between items-center">
                           <div className="flex items-center">
                             <Star className="h-4 w-4 text-yellow-400 fill-current mr-1" />
-                            <span className="text-sm font-medium">
-                              {resource.rating}
-                            </span>
+                            <span className="text-sm font-medium">{resource.rating}</span>
                           </div>
-                          <span className="text-lg font-bold text-green-600">
-                            {resource.price}
-                          </span>
+                          <span className="text-lg font-bold text-green-600">{resource.price}</span>
                         </div>
                       </div>
 
@@ -1392,12 +1228,8 @@ const BlogsBooks = () => {
                   </h4>
                 </div>
                 <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                  Growth in the markets begins with growth in knowledge and
-                  mindset. StockNote is your comprehensive platform to{" "}
-                  <span className="font-semibold text-blue-600">
-                    learn, analyze, track, and succeed
-                  </span>{" "}
-                  in your investment journey.
+                  Growth in the markets begins with growth in knowledge and mindset.
+                  StockNote is your comprehensive platform to <span className="font-semibold text-blue-600">learn, analyze, track, and succeed</span> in your investment journey.
                 </p>
 
                 {/* Feature Highlights */}
@@ -1422,7 +1254,7 @@ const BlogsBooks = () => {
                     className="text-lg px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 hover:from-blue-700 hover:via-purple-700 hover:to-indigo-700 shadow-lg"
                     onClick={() => navigate("/auth")}
                   >
-                    Start Free Trial
+                    Get Started
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                   <Button
@@ -1436,9 +1268,7 @@ const BlogsBooks = () => {
                   </Button>
                 </div>
 
-                <p className="text-sm text-gray-500 mt-6">
-                  No credit card required • 14-day free trial • Cancel anytime
-                </p>
+
               </CardContent>
             </Card>
           </div>
@@ -1456,18 +1286,13 @@ const BlogsBooks = () => {
                   <TrendingUp className="h-6 w-6" />
                 </div>
                 <div>
-                  <span className="text-2xl font-bold text-white">
-                    StockNote
-                  </span>
-                  <p className="text-xs text-slate-400">
-                    Invest with Intelligence
-                  </p>
+                  <span className="text-2xl font-bold text-white">StockNote</span>
+                  <p className="text-xs text-slate-400">Invest with Intelligence</p>
                 </div>
               </div>
               <p className="text-slate-400 leading-relaxed">
-                Your comprehensive platform for investment education, market
-                analysis, and portfolio tracking. Building confident investors,
-                one insight at a time.
+                Your comprehensive platform for investment education, market analysis,
+                and portfolio tracking. Building confident investors, one insight at a time.
               </p>
             </div>
 
@@ -1475,49 +1300,24 @@ const BlogsBooks = () => {
             <div className="text-center">
               <h5 className="text-white font-semibold mb-4">Quick Links</h5>
               <div className="space-y-2">
-                <button
-                  onClick={() => navigate("/")}
-                  className="block text-slate-400 hover:text-white transition-colors"
-                >
-                  Home
-                </button>
-                <button
-                  onClick={() => navigate("/journal")}
-                  className="block text-slate-400 hover:text-white transition-colors"
-                >
-                  Trading Journal
-                </button>
-                <button
-                  onClick={() => navigate("/pricing")}
-                  className="block text-slate-400 hover:text-white transition-colors"
-                >
-                  Pricing
-                </button>
-                <button
-                  onClick={() => navigate("/auth")}
-                  className="block text-slate-400 hover:text-white transition-colors"
-                >
-                  Sign Up
-                </button>
+                <button onClick={() => navigate("/")} className="block text-slate-400 hover:text-white transition-colors">Home</button>
+                <button onClick={() => navigate("/journal")} className="block text-slate-400 hover:text-white transition-colors">Trading Journal</button>
+                <button onClick={() => navigate("/pricing")} className="block text-slate-400 hover:text-white transition-colors">Pricing</button>
+                <button onClick={() => navigate("/auth")} className="block text-slate-400 hover:text-white transition-colors">Sign Up</button>
               </div>
             </div>
 
             {/* Newsletter */}
             <div className="text-center md:text-left">
               <h5 className="text-white font-semibold mb-4">Stay Updated</h5>
-              <p className="text-slate-400 mb-4">
-                Get weekly market insights and investment tips delivered to your
-                inbox.
-              </p>
+              <p className="text-slate-400 mb-4">Get weekly market insights and investment tips delivered to your inbox.</p>
               <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
                   placeholder="Enter your email"
                   className="flex-1 px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
-                <Button className="bg-blue-600 hover:bg-blue-700">
-                  Subscribe
-                </Button>
+                <Button className="bg-blue-600 hover:bg-blue-700">Subscribe</Button>
               </div>
             </div>
           </div>
@@ -1534,13 +1334,8 @@ const BlogsBooks = () => {
 
       <style jsx>{`
         @keyframes float {
-          0%,
-          100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-10px);
-          }
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
         }
         .animate-float {
           animation: float 6s ease-in-out infinite;
