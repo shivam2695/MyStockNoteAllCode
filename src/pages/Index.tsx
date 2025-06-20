@@ -152,7 +152,7 @@ const Index = () => {
                 onClick={() => navigate("/auth")}
                 className="bg-blue-500 hover:bg-blue-400 text-white font-semibold px-8 py-4 text-lg"
               >
-                Try StockNote free →
+                Get Started →
               </Button>
             </div>
 
