@@ -350,7 +350,6 @@ const BlogsBooks = () => {
       price: "Free",
       rating: 4.8,
       subscribers: 45600,
-                    MyStockNote
       host: "MyStockNote Team",
       level: "All Levels",
       comingSoon: false,
