@@ -302,6 +302,305 @@ const Index = () => {
               </div>
             </div>
           </div>
+
+          {/* Trust Indicators */}
+          <div className="flex flex-wrap justify-center items-center gap-8 mt-12">
+            <div className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-green-50 to-green-100 rounded-lg border border-green-200">
+              <Shield className="h-5 w-5 text-green-600" />
+              <span className="text-sm font-medium text-green-800">
+                SEBI Compliant
+              </span>
+            </div>
+            <div className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border border-blue-200">
+              <CheckCircle className="h-5 w-5 text-blue-600" />
+              <span className="text-sm font-medium text-blue-800">
+                99.9% Uptime
+              </span>
+            </div>
+            <div className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg border border-purple-200">
+              <Users className="h-5 w-5 text-purple-600" />
+              <span className="text-sm font-medium text-purple-800">
+                Trusted by 5000+ Indian Traders
+              </span>
+            </div>
+            <div className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-orange-50 to-orange-100 rounded-lg border border-orange-200">
+              <Zap className="h-5 w-5 text-orange-600" />
+              <span className="text-sm font-medium text-orange-800">
+                Real-time NSE/BSE Data
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+              Everything You Need to Trade Better
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Comprehensive tools designed specifically for traders who want to
+              track, analyze, and improve their performance.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Trade Journal */}
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl p-6 shadow-lg border border-blue-100 hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-4">
+                <BookOpen className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                📓 Trade Journal
+              </h3>
+              <p className="text-slate-600">
+                Log entries with CMP, entry/exit, SL/Target, tags, remarks
+              </p>
+            </div>
+
+            {/* Focus Stocks Tracker */}
+            <div className="bg-gradient-to-br from-white to-orange-50 rounded-xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-4">
+                <Target className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                🌟 Focus Stocks Tracker
+              </h3>
+              <p className="text-slate-600">
+                Track shortlisted ideas with price ranges and mark them as
+                trades taken
+              </p>
+            </div>
+
+            {/* Performance Analytics */}
+            <div className="bg-gradient-to-br from-white to-green-50 rounded-xl p-6 shadow-lg border border-green-100 hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-4">
+                <BarChart3 className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                📈 Performance Analytics
+              </h3>
+              <p className="text-slate-600">
+                Monthly P&L, win rate, average returns, and more
+              </p>
+            </div>
+
+            {/* Team Collaboration */}
+            <div className="bg-gradient-to-br from-white to-purple-50 rounded-xl p-6 shadow-lg border border-purple-100 hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                <Users className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                👥 Team Collaboration
+              </h3>
+              <p className="text-slate-600">
+                Share ideas and sync trades with your team
+              </p>
+            </div>
+
+            {/* Smart Notifications */}
+            <div className="bg-gradient-to-br from-white to-indigo-50 rounded-xl p-6 shadow-lg border border-indigo-100 hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-lg flex items-center justify-center mb-4">
+                <Zap className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                🔔 Smart Notifications
+              </h3>
+              <p className="text-slate-600">
+                Reminders, target hits, or review prompts
+              </p>
+            </div>
+
+            {/* Custom Tags & Filters */}
+            <div className="bg-gradient-to-br from-white to-pink-50 rounded-xl p-6 shadow-lg border border-pink-100 hover:shadow-xl transition-shadow">
+              <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-lg flex items-center justify-center mb-4">
+                <Activity className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                🏷️ Custom Tags & Filters
+              </h3>
+              <p className="text-slate-600">
+                Organize and filter trades however you want
+              </p>
+            </div>
+          </div>
+
+          {/* Private & Secure - Full Width */}
+          <div className="mt-8 bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 rounded-xl p-8 text-white text-center">
+            <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Shield className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-2xl font-semibold mb-3">🔒 Private & Secure</h3>
+            <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+              Encrypted journal. Your data is yours. Always.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Traders Love StockNote Section */}
+      <section className="py-20 bg-gradient-to-br from-white via-slate-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+              Why Traders Love StockNote
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Join thousands of traders who trust StockNote for their trading
+              journey
+            </p>
+          </div>
+
+          {/* Trust Points */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-gradient-to-br from-white to-green-50 rounded-xl p-8 shadow-lg border border-green-100 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                Built by traders, for traders
+              </h3>
+              <p className="text-slate-600">
+                Created by experienced traders who understand your needs
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl p-8 shadow-lg border border-blue-100 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Zap className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                Simple, powerful, and clutter-free
+              </h3>
+              <p className="text-slate-600">
+                Clean interface that gets out of your way
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-white to-purple-50 rounded-xl p-8 shadow-lg border border-purple-100 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                No spreadsheets. No clutter. Just insights.
+              </h3>
+              <p className="text-slate-600">
+                Focus on trading, not on data management
+              </p>
+            </div>
+          </div>
+
+          {/* Quick Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-6 border border-orange-200 text-center">
+              <div className="flex items-center justify-center mb-3">
+                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3">
+                  <Activity className="h-4 w-4 text-white" />
+                </div>
+                <span className="text-2xl font-bold text-slate-900">
+                  ⏱️ Save 5+ hrs/week
+                </span>
+              </div>
+              <p className="text-slate-600 text-sm">in tracking trades</p>
+            </div>
+
+            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200 text-center">
+              <div className="flex items-center justify-center mb-3">
+                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                  <TrendingUp className="h-4 w-4 text-white" />
+                </div>
+                <span className="text-2xl font-bold text-slate-900">
+                  💡 90% users
+                </span>
+              </div>
+              <p className="text-slate-600 text-sm">
+                say they take better trades
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200 text-center">
+              <div className="flex items-center justify-center mb-3">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                  <BarChart3 className="h-4 w-4 text-white" />
+                </div>
+                <span className="text-2xl font-bold text-slate-900">
+                  📊 Designed for
+                </span>
+              </div>
+              <p className="text-slate-600 text-sm">
+                swing & positional trading
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Books & Blogs Section */}
+      <section className="py-16 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="mb-4">
+              <Badge className="bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 border-purple-200">
+                <BookOpen className="h-3 w-3 mr-1" />
+                Learn & Grow
+              </Badge>
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+              Curated Learning Resources
+            </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Weekly blogs, book recommendations, and expert insights to enhance
+              your trading knowledge
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl p-6 shadow-md border border-blue-100 text-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Activity className="h-5 w-5 text-white" />
+              </div>
+              <h3 className="font-semibold text-slate-900 mb-2">
+                Weekly Blogs
+              </h3>
+              <p className="text-sm text-slate-600">Market insights</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-white to-purple-50 rounded-xl p-6 shadow-md border border-purple-100 text-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <BookOpen className="h-5 w-5 text-white" />
+              </div>
+              <h3 className="font-semibold text-slate-900 mb-2">
+                Monthly Books
+              </h3>
+              <p className="text-sm text-slate-600">Expert picks</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-white to-green-50 rounded-xl p-6 shadow-md border border-green-100 text-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Target className="h-5 w-5 text-white" />
+              </div>
+              <h3 className="font-semibold text-slate-900 mb-2">Summaries</h3>
+              <p className="text-sm text-slate-600">Quick insights</p>
+            </div>
+
+            <div className="bg-gradient-to-br from-white to-orange-50 rounded-xl p-6 shadow-md border border-orange-100 text-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Star className="h-5 w-5 text-white" />
+              </div>
+              <h3 className="font-semibold text-slate-900 mb-2">Top Quotes</h3>
+              <p className="text-sm text-slate-600">Daily wisdom</p>
+            </div>
+          </div>
+
+          {/* Quote of the Day */}
+          <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl p-6 border border-blue-100 text-center">
+            <blockquote className="text-lg font-semibold text-slate-900 mb-2">
+              "Risk comes from not knowing what you're doing."
+            </blockquote>
+            <cite className="text-sm text-slate-600">— Warren Buffett</cite>
+          </div>
         </div>
       </section>
 
@@ -364,6 +663,17 @@ const Index = () => {
                 The complete investment management platform for tracking,
                 analyzing, and optimizing your portfolio performance.
               </p>
+              <div className="flex space-x-4">
+                <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 cursor-pointer">
+                  <Globe className="h-5 w-5" />
+                </div>
+                <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 cursor-pointer">
+                  <Users className="h-5 w-5" />
+                </div>
+                <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 cursor-pointer">
+                  <BookOpen className="h-5 w-5" />
+                </div>
+              </div>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Product</h3>
