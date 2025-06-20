@@ -311,10 +311,7 @@ const Index = () => {
           <div className="absolute top-0 left-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl"></div>
         </div>
-        <motion.div
-          {...fadeInUp}
-          className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8"
-        >
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Ready to elevate your investment game?
           </h2>
@@ -372,34 +369,22 @@ const Index = () => {
               <h3 className="font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-slate-400">
                 <li>
-                  <button
-                    onClick={() => navigate("/journal")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/journal")} className="hover:text-white">
                     Journal
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => navigate("/pricing")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/pricing")} className="hover:text-white">
                     Pricing
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => navigate("/learn")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/learn")} className="hover:text-white">
                     Learn
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => navigate("/profile")}
-                    className="hover:text-white"
-                  >
+                  <button onClick={() => navigate("/profile")} className="hover:text-white">
                     Profile
                   </button>
                 </li>
