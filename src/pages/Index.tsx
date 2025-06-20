@@ -440,7 +440,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Traders Love StockNote Section */}
+      {/* Why Traders Love MyStockNote Section */}
       <section className="py-20 bg-gradient-to-br from-white via-slate-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
